@@ -48,3 +48,16 @@ const final_img = document.querySelector(".img-content img");
 final_img.addEventListener("mousedown", () => {
     final_img.style.transform="scale(0.3)";
 });
+
+const nav_As = document.querySelector('nav');
+nav_As.addEventListener('click', (event) => {
+    event.target.style.color="blue";
+    event.preventDefault();
+})
+
+const btn_stuff = document.querySelector('.btn');
+btn_stuff.addEventListener('click', (event) => {
+    event.target.style.backgroundColor="yellow";
+    event.stopPropagation();
+
+})
